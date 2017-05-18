@@ -1,0 +1,22 @@
+@import '.~styles/includes';
+.selectWrapper {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.select {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 0;
+  height: 100%;
+  color: $fieldColor;
+  background-color: transparent;
+  &:focus {
+    outline: 0;
+  }
+}
+
+// .defaultValue {
+//     color: #ccc;
+// }

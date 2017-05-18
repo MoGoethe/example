@@ -1,0 +1,44 @@
+@import '~styles/includes';
+.tabTitles {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border: 0;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.tabTitle {
+  display: table-cell;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  & > span {
+    display: inline-block;
+    position: relative;
+  }
+}
+
+.titleActive:after {
+  content: "";
+  left: -30%;
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 160%;
+  background-color: $green;
+}
+
+.contentActive {
+  display: block !important;
+}
+
+.content {
+  // display: none;
+}
+
+.tabContents {
+  position: relative;
+  min-height: 674px;
+}

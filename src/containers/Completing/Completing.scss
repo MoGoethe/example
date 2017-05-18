@@ -1,0 +1,74 @@
+@import '~styles/includes';
+@import '~components/Input/Input';
+.protocol {
+  padding: 20px 40px;
+  color: #737475;
+  & > i {
+    background-color: $green;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+  }
+  & > a {
+    display: inline-block;
+    color: $green;
+    opacity: .8;
+  }
+}
+
+.modalTitle {
+  color: $green;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.modalContent {
+  max-height: 900px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  p {
+    color: #B2B3B4;
+    line-height: 2;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  button {
+    height: 100px;
+  }
+}
+
+.leftItem {
+  flex: 2;
+}
+
+.rightItem {
+  flex: 3;
+}
+
+.input {
+  @extend .input;
+  text-align: center;
+  display: block;
+}
+
+.orderModalAction {
+  // font-size: 0;
+  button {
+    width: 240px;
+    // margin-right: 40px;
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+.protocolTitle {
+  font-weight: 600;
+  color: #8b8d90 !important;
+}

@@ -1,0 +1,28 @@
+$green: rgb(61, 167, 66);
+$textColor: rgb(69, 69, 69);
+
+.header {
+  padding: 40px 0;
+  border-bottom: 1px solid $textColor;
+  h2 {
+    font-size: 48px;
+    color: $green;
+  }
+  h3 {
+    font-size: 40px;
+    color: rgb(214, 214, 214);
+  }
+}
+
+.content {
+  padding: 40px 0;
+  font-size: 32px;
+  & > ul {
+    font-size: 32px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+    li:first-child {
+      color: $green;
+    }
+  }
+}

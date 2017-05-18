@@ -1,0 +1,27 @@
+@import '~styles/includes';
+
+.header {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  img {
+    width: 160px;
+    height: 160px
+  }
+
+  p {
+    color: $green;
+    line-height: 1.8;
+  }
+}
+
+.submitButton {
+  height: 100px !important;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+.vercodeButton {
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,58 @@
+@import '~styles/includes';
+.header {
+  position: relative;
+  height: 340px;
+  background-color: $green;
+  padding: 38px;
+  & > p {
+    color: #f1f1f1;
+  }
+}
+
+.withdraw {
+  position: absolute;
+  top: 115px;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.money {
+  font-size: 100px;
+  margin-bottom: 24px;
+  // font-weight: 600;
+}
+
+.symbol {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 28px;
+  color: #f1f1f1;
+}
+
+.withdrawBtn {
+  color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 1000px;
+}
+
+.time {
+  color: #D9D9D9;
+  font-size: 20px;
+  padding-top: 6px;
+}
+
+.ioText {
+  font-size: 32px;
+}
+
+.tips {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  color: #fff;
+  font-size: 20px;
+}

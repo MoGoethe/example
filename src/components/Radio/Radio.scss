@@ -1,0 +1,42 @@
+@import '~styles/includes';
+.radio {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.radioInput {
+    -webkit-appearance: none;
+    border: 1px solid $grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    &:checked + span {
+        display: inline-block;
+        background-color: $green;
+        // transition: background-color .3s ease-in-out;
+    }
+    &:checked {
+        border: 1px solid transparent;
+        outline: 0;
+    }
+}
+
+.checked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    & > i {
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        position: relative;
+        top: -3px;
+        left: 3px;
+    }
+}

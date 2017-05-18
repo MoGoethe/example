@@ -1,0 +1,69 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.bounceIn,
+.animated.slideInDown,
+.animated.bounceOut {
+  animation-duration: 300ms;
+}
+
+@keyframes :global(bounceIn) {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  80% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+@keyframes :global(bounceOut) {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+  50%,
+  55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+@keyframes :global(slideInDown) {
+  from {
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}

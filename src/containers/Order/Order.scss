@@ -1,0 +1,62 @@
+@import '~styles/includes';
+.container {
+  padding: 30px;
+}
+
+.order {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.orderHeader {
+  padding: 20px 40px;
+  background-color: #1A1B1C;
+  color: #d0d1d2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  h2 {
+    font-size: 40px;
+    color: $green;
+    // color: #999A9B;
+  }
+  p {
+    line-height: 1.4;
+    font-size: 24px;
+  }
+}
+
+.orderBody {
+  padding: 20px 40px;
+  .content {
+    border-bottom: 1px solid $greyBorder;
+  }
+}
+
+.orderFooter {
+  padding: 20px 40px;
+}
+
+.content {
+  & > p {
+    margin-bottom: 20px;
+    color: $fieldColor;
+    overflow: hidden;
+    & > span {
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+}
+
+.noOrder {
+  margin-top: 147px;
+  text-align: center;
+  p {
+    margin-top: 20px;
+  }
+}

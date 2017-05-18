@@ -1,0 +1,43 @@
+.mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  right: 0;
+  // background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.typing {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  -webkit-animation: typing 1s linear infinite alternate;
+  animation: typing 1s linear infinite alternate;
+  margin: 0 auto;
+  position: relative;
+  left: -14px;
+}
+
+@keyframes typing {
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 24px 0px 0px 0px rgba(0, 0, 0, 0.2), 48px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 24px 0px 0px 0px rgba(0, 0, 0, 2), 48px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 24px 0px 0px 0px rgba(0, 0, 0, 0.2), 48px 0px 0px 0px rgba(0, 0, 0, 1);
+  }
+}

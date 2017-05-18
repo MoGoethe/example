@@ -1,0 +1,32 @@
+@import '~styles/includes';
+.header {
+  padding: 146px 0 84px;
+  img {
+    display: block;
+    width: 510px;
+  }
+}
+
+.title {
+  text-align: center;
+  color: $green;
+  & > i {
+    width: 42px;
+    height: 42px;
+    background-color: $green;
+    color: #fff;
+    border-radius: 1000px;
+    font-size: 42px;
+  }
+}
+
+.buttons {
+  padding: 84px 50px;
+  & > button {
+    width: 300px;
+    height: 76px;
+    &:last-child {
+      margin-left: 42px;
+    }
+  }
+}
